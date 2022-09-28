@@ -1,0 +1,10 @@
+def count_nt(dna):
+    A_count = dna.upper().count('A')
+    G_count = dna.upper().count('G')
+    C_count = dna.upper().count('C')
+    T_count = dna.upper().count('T')
+    ACGT_count = str(A_count) + ' ' + str(C_count) + ' ' + str(G_count) + ' ' + str(T_count)
+    return ACGT_count
+
+dna = input('Enter DNA sequence: ')
+print(count_nt(dna))
